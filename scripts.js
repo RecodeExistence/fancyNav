@@ -22,15 +22,15 @@ const fadeIn = (list, logo) => {
     const liList = document.querySelectorAll('li'); 
     liList.forEach(li => li.setAttribute('class', 'moveToTop'));
     navBar.style.visibility="visible";
+    navBar.style.marginBottom="100px";
     navBar.classList.add("animated", "zoomIn", "delay-1.2s", "moveToTop"); 
     
     // grab logo element, apply fadeout effects.
-    logo.classList.add('logoClicked', 'animated', 'fadeOut', 'delay-1.5s');
+    logo.classList.add('animated', 'fadeOut', 'delay-1.5s');
+    logo.style.display="none";
 }
 
 window.onload = logoWasClicked;
-
-
 
 
 

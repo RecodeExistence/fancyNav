@@ -7,6 +7,10 @@ body {
     width: 100%;
 }
 
+#menu-icon {
+    visibility: hidden;
+}
+
 .navBar {
     display: flex;
     width: 100%;
@@ -56,17 +60,42 @@ body {
     align-items: center;
 }
 
+
+@media only screen and (max-width: 1360px) {
+    #logo-startBtn {
+        margin-top: 15%;
+    }
+
+
+
 @media only screen and (max-width: 1253px) {
+    #logo-startBtn {
+        margin-top: 10%;
+    }
+    
     .navBar li {
         justify-content: space-evenly;
         align-items: center;
     }
 
 
-    @media only screen and (max-width: 597px) {
+    @media only screen and (max-width: 550px) {
         .navBar li {
-            margin-left: 3%; 
-            margin-right: 3%;
+            margin-left: 1%; 
+            margin-right: 1%;
         }
     }
+
+    @media only screen and (max-width: 495px) {
+        #logo-startBtn {
+            visibility: visible;
+            margin-top: 10%;
+        }
+        .navBar ul {
+            position: absolute; 
+            top: 0;
+        }        
+    }
+
+
 }
